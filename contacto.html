@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMatero</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="icon"  href="logodem.svg">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+   <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class='bx bx-menu'></i>
+    </label>
+    <label class="logo"> Jmateras</label>
+    <ul>
+        <li><a class="active" href="home.html">Inicio</a></li>
+        <li><a href="producto.html">Producto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+   </nav>
+    <div class="formulario">
+        <form action="https://formsubmit.co/julietyartes45@gmail.com" method="POST">
+            <h2>Contacto</h2>
+
+            <input type="text" name="name" id="name" placeholder="Nombre y Apedillo" required>
+            <label for="name"></label>
+
+            <input type="email" name="email" id="email" placeholder="Correo" required>
+            <label for="email"></label>
+
+            <input type="text" name="subject" id="subject" placeholder="Asunto" required>
+            <label for="subject"></label>
+
+            <textarea name="mensaje"  id="mensaje" placeholder="escriba aqui su mensaje" cols="30" rows="10"></textarea>
+
+            <input class="boton" type="submit" value="Enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+     
+    </div>
+    
+</body>
+</html>
